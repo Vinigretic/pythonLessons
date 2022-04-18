@@ -1692,8 +1692,30 @@ from itertools import groupby, islice, starmap
 # with open('products.csv', 'r', encoding='UTF-8') as f:
 #     x = f.readlines()
 # pprint(tuple(tuple(i.rstrip().split(',')) for i in x))
-import csv
-with open('products.csv', 'r', newline='') as f:
-    x = csv.reader(f)
-    pprint(tuple(tuple(i) for i in x))
+
+
+# import csv
+# with open('products.csv', 'r', newline='') as f:
+#     x = csv.reader(f)
+#     pprint(tuple(tuple(i) for i in x))
+
+
+a = 'П'
+print(len(a) * 60 // 100, 'р.', len(a) * 60 % 100, 'коп.')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

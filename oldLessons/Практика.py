@@ -443,7 +443,7 @@
 # Например:
 # chess = '1. d2 e6 2. e4 d5 3. Кc3 c5 4. Кf3 O-O 5. e:d5 e:d5 6. Сe2 Кf6 7. O-O Сe7 8. Сg5 Кc6 9. d:c5 Сe6 10. Кd4 С:c5 11. Кb3 Сe7 12. Сf3 Кe5 13. Лe1 К:f3+ 14. Ф:f3 Лc8 15. h3 h6'
 # 0. Распечатать первый ход партии: 1. d2 e6   Найти как можно больше решений.
-# chess = '1. Кd2 Кe6 2. e4 d5 3. Кc3 c5 4. Кf3 O-O 5. e:d5 e:d5 6. Сe2 Кf6 7. O-O Сe7 8. Сg5 Кc6 9. d:c5 Сe6 10. Кd4 С:c5 11. Кb3 Сe7 12. Сf3 Кe5 13. Лe1 К:f3+ 14. Ф:f3 Лc8 15. h3 h6'
+chess = '1. Кd2 Кe6 2. e4 d5 3. Кc3 c5 4. Кf3 O-O 5. e:d5 e:d5 6. Сe2 Кf6 7. O-O Сe7 8. Сg5 Кc6 9. d:c5 Сe6 10. Кd4 С:c5 11. Кb3 Сe7 12. Сf3 Кe5 13. Лe1 К:f3+ 14. Ф:f3 Лc8 15. h3 h6'
 # print(' '.join(chess.split()[:3]))    # 1.
 # x = chess.split()
 # print(x[0], x[1], x[2])    # 2.
@@ -471,9 +471,9 @@
 # print(chess.split()[1::3].index('O-O') + 1)
 
 # 4. Распечатать на каком ходу у чёрных была короткая рокировка: O-O.
-# chess = chess.split()
-# print(chess)
-# chess = chess[2::3]
+chess = chess.split()
+print(chess)
+chess = chess[2::3]
 # print(chess)
 # print(chess.index('O-O') + 1)
 
