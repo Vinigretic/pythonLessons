@@ -1698,16 +1698,46 @@ from itertools import groupby, islice, starmap
 # with open('products.csv', 'r', newline='') as f:
 #     x = csv.reader(f)
 #     pprint(tuple(tuple(i) for i in x))
+# a = "абвгдежзийклмнопрстуфхцчшщъыьэюя"
+# b = 'роскомнадзор'
+# c = b + ' ' + 'запретил букву'
+#
+# while c:
+#     d = ''
+#     for i in c:
+#         for j in range(len(a)):
+#             if a[j] in c:
+#                 c = c + ' ' + a[j]
+#                 break
+#         if c[-1]!= i:
+#             d += i
+#     c = d
+#     print(c + ' ' +  a[j])
 
 
-a = 'П'
-print(len(a) * 60 // 100, 'р.', len(a) * 60 % 100, 'коп.')
+# for i in a:
+#     if i != 'а':
+#         b += i
+# print(b)
 
 
 
 
-
-
+a, b = input(), input()
+if a == 'красный' and b == 'синий' or b == 'красный' and a == 'синий':
+    print('фиолетовый')
+elif a == 'красный' and b == 'желтый' or b == 'красный' and a == 'желтый':
+    print('оранжевый')
+elif a =='синий' and b == 'желтый' or b =='синий' and a == 'желтый':
+    print('зеленый')
+elif a == b == 'красный':
+    print('красный')
+elif a == b == 'синий':
+    print('синий')
+elif a == b == 'желтый':
+    print('желтый')
+else:
+    print('ошибка цвета')
 
 
 
