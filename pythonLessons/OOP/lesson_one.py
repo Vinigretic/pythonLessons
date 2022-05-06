@@ -37,15 +37,43 @@
 #
 #
 # object_1 = Person()
-# object_1.say_hello()
+# object_1.say_hello() # вызов метода
 
 # Конструктор создает обьекты(вызывается при создании обьектов)
 
+# class Person:
+#     def __init__(self): # метод контруктора, всегда принимает self
+#         print('Создание обьекта Python')
+
+
+# object_1 = Person()
+
 class Person:
-    def __init__(self): # метод контруктора, всегда принимает self
-        print('Создание обьекта Python')
+    def __init__(self, name):  # создаем конструктор с доп параметром name - это атрибут, артибуты создаются
+                               # только в конструкторе, в не конструктора создаются динамические атрибуты,
+                               # доп параметр создаем всегда когда нам нужно что-то принимать от пользователя
+        self.name = name  # создаем артибут класса
+        self.age = 1  # создаем атрибут класса и присваеваем ему значение по стандарту
+
+    def display_info(self):
+        print(f'Name: {self.name}, Age: {self.age}')
 
 
-object_1 = Person()
+object1 = Person('Alina')
 
+print(object1.name)
+print(object1.age)
 
+object1.age = 20
+print(object1.age)
+
+object1.name = 'Vadim'
+print(object1.name)
+
+object1.city = 'Lviv' # динамическое создание атрибута не в конструкторе
+print(object1.city)
+
+object1.city = 'Kyiv'  # динамические атрибуты так же можно изменять
+print(object1.city)
+
+object1.display_info()
