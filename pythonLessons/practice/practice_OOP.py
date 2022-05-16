@@ -151,10 +151,80 @@
 # object1.add_money(0, 300)
 # object1.display()
 
+# Создайте класс Soda (для определения типа газированной воды), принимающий 1 аргумент при инициализации (отвечающий за
+# добавку к выбираемому лимонаду).
+# В этом классе реализуйте метод show_my_drink(), выводящий на печать «Газировка и {ДОБАВКА}» в случае наличия добавки,
+# а иначе отобразится следующая фраза: «Обычная газировка».
 
+# class Soda:
+#     def __init__(self, additive):
+#         if type(additive) == str:
+#             self.additive = additive
+#         else:
+#             self.additive = None
+#
+#     def show_my_drink(self):
+#         if self.additive:
+#             print(f'Soda and {self.additive}')
+#         else:
+#             print('Usual soda')
 
+    # def __init__(self, ingredient):
+    #     if isinstance(ingredient, str):
+    #         self.ingredient = ingredient
+    #     else:
+    #         self.ingredient = None
+    #
+    # def show_my_drink(self):
+    #     if self.ingredient:
+    #         print(f'Газировка и {self.ingredient}')
+    #     else:
+    #         print('Обычная газировка')
 
+# # drink1 = Soda()
+# drink2 = Soda('малина')
+# drink3 = Soda(5)
+# # drink1.show_my_drink()
+# drink2.show_my_drink()
+# drink3.show_my_drink()
 
+# Николаю требуется проверить, возможно ли из представленных отрезков условной длины сформировать треугольник.
+# Для этого он решил создать класс TriangleChecker, принимающий только положительные числа.
+# С помощью метода is_triangle() возвращаются следующие значения (в зависимости от ситуации):
+# – Ура, можно построить треугольник!;
+# – С отрицательными числами ничего не выйдет!;
+# – Нужно вводить только числа!;
+# – Жаль, но из этого треугольник не сделать.
+# Построить треугольник из отрезков можно лишь в одном случае: сумма длин двух любых сторон всегда больше третьей
+
+# class TriangleChecker:
+#     def __init__(self, sides):
+#             self.sides = sides
+#
+#
+#     def is_triangle(self):
+#         if all(isinstance(i, (int, float)) for i in self.sides):
+#             self.sides = sorted(self.sides)
+#             if any(i < 0 for i in self.sides):
+#                 print('С отрицательными числами ничего не выйдет!')
+#             elif self.sides[2] < self.sides[0] + self.sides[1]:
+#                 print('Жаль, но из этого треугольник не сделать.')
+#             else:
+#                 print('Ура, можно построить треугольник!')
+#
+#         else:
+#             print('Нужно вводить только числа!')
+#
+#
+#
+# object1 = TriangleChecker([-1, 2, 3])
+# object2 = TriangleChecker(['a', 1, 2])
+# object3 = TriangleChecker([2, 1, 2])
+# object4 = TriangleChecker([1, 2, 3])
+# object1.is_triangle()
+# object2.is_triangle()
+# object3.is_triangle()
+# object4.is_triangle()
 
 
 

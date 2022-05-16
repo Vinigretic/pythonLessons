@@ -2,7 +2,7 @@
 
 # class Person:
 #     type = 'Person'  # атрибуты класса, доступны всем обьектам класса
-#     description = 'decribase a person'
+#     description = 'decribes a person'
 #
 # print(Person.type)
 # print(Person.description)
